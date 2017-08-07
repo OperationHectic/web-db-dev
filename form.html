@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	.success { color: green }
+	.error { color: red}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="post_jquery.js"></script>
+</head>
+<body style="background-color: black">
+	<form id="post_form" action="test.php" method="post">
+	  First name:
+	  <input type="text" id="first_name" name="first_name" value=""><br><br>
+	  Last name:
+	  <input type="text" id="last_name" name="last_name" value=""><br><br>
+	  Post:<br>
+	  <textarea rows="10" cols="30" id="post_text" name="post_text" value=""></textarea><br>
+	  <input type="submit" id="submit" name="submit" value="Submit">
+	</form>
+	
+	<div id="form-messages"></div>
+	<form id="db-info" action="test.php" method="get">
+	<input type="submit" id="db-list" name="db-list" value="Get Posts">
+	</form>
+	<div id="data-table"></div>
+	<div><img style="width: 180px; height: 50px" src="button.png" onmousedown="this.src='button-clicked.png'" onmouseup="this.src='button.png'"></div>
+	<div><img src="menu.png"></div>
+	<div><img style="width: 350px; height: 200px" src="display.png"></div>
+</body>
+
+</html>
